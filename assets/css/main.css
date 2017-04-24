@@ -1,0 +1,32 @@
+.container {
+  margin: 0px;
+  background: -webkit-linear-gradient(#B03A2E, #000000);
+  height: 600px;
+}
+.form-signin {
+  text-align: center;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  padding: 7px;
+  width: 200px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+}
+
+.form-control{
+  border-radius: 50px;
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  margin: 4px;
+  padding: 15px;
+}
+
+#signin-header {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #FBFCFC;
+}
