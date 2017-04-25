@@ -75,18 +75,24 @@ nav  li , nav a{
   padding: 3px;
 }
 
-
 header #toggle:hover{
   color: #f5365f !important;
 }
 footer{
   text-align: center;
-  height: 70px;
+  /*height: 70px;*/
   width: 100%;
   display: block;
   background: #373B47;
   color: white;
   padding-top: 7px;
-  bottom: 0;
-  position: static;
+  bottom: -1;
+  margin-bottom: 0;
+  position: absolute;
+}
+footer .box-redes a{
+  border: solid 1px white;
+  color: white;
+  font-size: 1.5rem;
+  width: 30px;
 }

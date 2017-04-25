@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="fonts/css/font-awesome.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/slider.css">
+  <link rel="stylesheet" href="assets/css/contacto.css">
   <link rel="icon" href="assets/img/icono.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <title>Proyecto X</title>
 </head>
 <header>
@@ -26,25 +28,25 @@
     </div>
   </div>
   </nav>
-  <div class="text-info visor">
-    <img class = "slider" src="assets/img/1.jpg" alt="foto-machu-Picchu" class="imagen-cuerpo" >
-    <img class = "slider" src="assets/img/2.png" alt="foto-huanchaco" class="imagen-cuerpo">
-    <img class = "slider" src="assets/img/3.jpg" alt="" class="imagen-cuerpo">
-    <h1><span class="mensaje" style="color:#fff">VIAJEMOS QUE LA VIDA ES CORTA Y EL MUNDO ENORME</span></h1>
-    <!-- <div class="imagen-cuerpo" id="estilo-cuadro"> -->
-    </div>
 </header>
-<body id = "inicio">
-  <div id ="costa"  class="content">
-
-  </div>
-  <section id ="sierra"  class="content">
-
-  </section>
-  <section id ="selva"  class="content">
-
-  </section>
-
+<body id = 'inicio'>
+  <form action="index.html">
+    <div class="container-form">
+      <div class="title-contact">
+        <h2>Contáctanos</h2>
+        <p>Completa el formulario. Nos contactaremos muy pronto contigo.</p>
+      </div>
+      <label for="name" class="label-datos">Nombre : </label>
+      <input id = "name" class = "text-input" type="text"><br><br>
+      <label for="Apellidos" class="label-datos">Apellidos : </label>
+      <input id = "apellios" class = "text-input" type="text"><br><br>
+      <label for="email" class="label-datos">Email : </label>
+      <input id = "email" class = "text-input" type="text"><br><br>
+      <label for="Mensaje" class="label-datos">Mensaje : </label><br><br>
+      <textarea  class = "text-mensaje" id = "mensaje" rows="5" cols="30"></textarea><br><br>
+      <input class = "btn-datos" type="submit" name="" value="ENVIAR">
+    </div>
+  </form>
   <footer>
     <div>
     <h2>Nosotros</h2>
@@ -63,7 +65,6 @@
   <script type="text/javascript" src = "assets/js/datos.js"></script>
   <script type="text/javascript" src = "assets/js/mostrar.js"></script>
   <script type="text/javascript" src = "assets/js/app.js"></script>
-  <script type="text/javascript" src = "assets/js/slider.js"></script>
 
 </body>
 </html>
