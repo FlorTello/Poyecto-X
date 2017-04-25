@@ -96,3 +96,67 @@ footer .box-redes a{
   font-size: 1.5rem;
   width: 30px;
 }
+
+.logo {
+  position: relative;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  z-index: -2;
+  margin: 100px;
+}
+#cuerpo-logo {
+  position: absolute;
+  transform: rotate(-45deg);
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 0.5px solid #cfd8dc;
+  z-index: -1;
+}
+#texto-logo {
+  top: 35px;
+  left: 0px;
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+ font-family: 'Poiret One', cursive;
+ color: #312D41;
+ letter-spacing: 0.5em;
+  font-size: 12px;
+}
+#icon-logo {
+  position: absolute;
+  top: 60px;
+  left: 42px;
+}
+
+
+body {
+  margin: 0px;
+}
+
+.imagen-cuerpo {
+ position: relative;
+ top: 200px;
+ left: 110px;
+ margin: 5px;
+  width: 1109px;
+  height: 575px;
+}
+
+#estilo-cuadro {
+  text-align: center;
+  background-color: #F3F3F0;
+}
+
+#frase-cuadro {
+  position: relative;
+  margin: 0px;
+  padding: 50px;
+  top: 200px;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  letter-spacing: 0.5em;
+  color: #A29584;
+}
