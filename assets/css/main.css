@@ -31,10 +31,40 @@
   color: #FBFCFC;
 }
 
-#machu-picchu {
-  width: 880px;
-  height: 500px;
+.logo {
+  position: relative;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  z-index: -2;
+  margin: 100px;
 }
+#cuerpo-logo {
+  position: absolute;
+  transform: rotate(-45deg);
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 0.5px solid #cfd8dc;
+  z-index: -1;
+}
+#texto-logo {
+  top: 35px;
+  left: 0px;
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+ font-family: 'Poiret One', cursive;
+ color: #312D41;
+ letter-spacing: 0.5em;
+  font-size: 12px;
+}
+#icon-logo {
+  position: absolute;
+  top: 60px;
+  left: 42px;
+}
+
 
 body {
   margin: 0px;
@@ -63,5 +93,4 @@ body {
   font-size: 40px;
   letter-spacing: 0.5em;
   color: #A29584;
-
 }
