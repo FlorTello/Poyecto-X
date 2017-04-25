@@ -2,72 +2,91 @@ body{
   font-family: 'Roboto';
   padding: 0;
   margin: 0;
-  width: 100%;
 }
-header{
-  position: relative;
-}
+
 nav{
+  background-color: #EEE;
+  position: fixed;
+  padding-left: 70px;
+  top: 0;
   width: 100%;
   height: 70px;
   border-bottom: solid 1px #f5f4f9;
-  position: fixed;
-  background-color: #374046;
 }
 nav  li , nav a{
-  color: white;
+  color: #589442;
   text-decoration: none;
   list-style: none;
   display: inline-block;
   padding: 10px;
   letter-spacing: normal;
   vertical-align: middle;
-  /*position: relative;*/
   font-size: 1.2rem;
 }
-nav .menu{
+#toggle{
   position: absolute;
-  right: 14px;
-  padding: 0;
-  color: #ffd54f;
+  top: 35px;
+  right: 210px;
+  color: #589442;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.option:hover , .option-lugar:hover{
+  color: #59FF0A;
+}
+.content{
+  margin-right: 10%;
+  margin-left: 8%;
+  padding-top: 80px;
+  padding-left: 14px;
+  padding-right: 14px;
+  display: block;
+  text-align: center;
+}
+#costa{
+  position: relative;
+  background-color: #ffcdd2;
+  margin-top: 77px;
+}
+#sierra{
+  position: relative;
+  background-color: #c8e6c9;
+}
+#selva{
+  position: relative;
+  background-color: #fff9c4;
+}
+#lugares{
+  margin-top: 7px;
+  /*background-color: #c5db91;*/
+  font-weight: normal;
+  width: 140px;
+  position: absolute;
+  /*left: -20px;*/
+  z-index: 1000;
+  display: none;
+  background-color: #EEE;
+}
+#lugares ul li ,a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+header #toggle:hover{
+  color: #f5365f !important;
 }
 footer{
-  width: 100%;
-  height: 63px;
-  border-top:solid 1px #f5f4f9;
-  bottom: 0;
-  position: absolute;
-  background-color: #374046;
-}
-.container {
-  margin: 0px;
-  background: -webkit-linear-gradient(#B03A2E, #000000);
-  height: 600px;
-}
-.form-signin {
   text-align: center;
-  position: relative;
-  top: 200px;
-  left: 200px;
-  padding: 7px;
-  width: 200px;
-  border-radius: 5px;
-  -webkit-appearance: none;
-  border: 1px solid #ccc;
-}
-
-.form-control{
-  border-radius: 50px;
-  -webkit-appearance: none;
-  border: 1px solid #ccc;
-  margin: 4px;
-  padding: 15px;
-}
-
-#signin-header {
-  margin: 0px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #FBFCFC;
+  height: 70px;
+  width: 100%;
+  display: block;
+  background: #373B47;
+  color: white;
+  padding-top: 7px;
+  bottom: 0;
+  position: static;
 }

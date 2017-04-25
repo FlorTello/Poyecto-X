@@ -6,30 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="fonts/css/font-awesome.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/slider.css">
   <link rel="icon" href="assets/img/icono.png">
   <title>Proyecto X</title>
 </head>
 <header>
-  <nav>
-    <li><a href="#Inicio"><img src="assets/img/logo.png" width="50" alt=""></a></li>
-    <li><a href="#Nosotros">Nosotros</a></li>
-    <li><a href="#Servicios">Servicios</a></li>
-    <li><a href="#Contacto">Contacto</a></li>
-    <li><a href="#Lugares" class="menu fa fa-bars"> Lugares</a></li>
-  </nav>
-</header>
-<body id = "inicio">
-  <div class="menu">
-
-  </div>
-  <div class="contenido">
-    <div class="">
-      <img src="" alt="">
+  <nav id='nav-header' class ="" >
+    <li><a class="option" href="index.html"><img src="assets/img/logo.png" width="50" alt=""></a></li>
+    <li><a class="option" href="#Nosotros">Nosotros</a></li>
+    <li><a class="option" href="#Servicios">Servicios</a></li>
+    <li><a class="option" href="#Contacto">Contacto</a></li>
+    <div id = "toggle" class="menu fa fa-bars"> Lugares
+    <div id="lugares" class="lugares">
+      <ul>
+        <li><a class="option-lugar" href="#costa">Costa</a></li>
+        <li><a class="option-lugar" href="#sierra">Sierra</a></li>
+        <li><a class="option-lugar" href="#selva">Selva</a></li>
+      </ul>
     </div>
   </div>
+  </nav>
+  <div class="text-info visor">
+    <img class = "slider" src="assets/img/1.jpg" alt="foto-machu-Picchu" class="imagen-cuerpo" >
+    <img class = "slider" src="assets/img/2.png" alt="foto-huanchaco" class="imagen-cuerpo">
+    <img class = "slider" src="assets/img/3.jpg" alt="" class="imagen-cuerpo">
+    <h1><span class="mensaje" style="color:#fff">VIAJEMOS QUE LA VIDA ES CORTA Y EL MUNDO ENORME</span></h1>
+    <!-- <div class="imagen-cuerpo" id="estilo-cuadro"> -->
+    </div>
+</header>
+<body id = "inicio">
+  <div id ="costa"  class="content">
+
+  </div>
+  <section id ="sierra"  class="content">
+
+  </section>
+  <section id ="selva"  class="content">
+
+  </section>
 
   <footer>
-
+    <p>© Copyright</p>
   </footer>
 
   <script type="text/javascript" src = "assets/js/datos.js"></script>
