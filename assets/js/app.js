@@ -9,12 +9,18 @@ function mostrar(){
   document.getElementById("lugares").style.display='block';
 }
 
-var arr =[{name:"AREQUIPA", url:"assets/img/costa-arequipa.jpg", lugar:"Colca"}, {name:"ICA", url:"assets/img/costa-ica.jpg", lugar:"Huacachina"},
-          {name:"LIMA", url:"assets/img/costa-lima.jpg", lugar:"Barranco"}, {name:"PIURA", url:"assets/img/costa-piura.jpg", lugar:"Mancora"},
-          {name:"TRUJILLO", url:"assets/img/costa-trujillo.jpg", lugar:"Huanchaco"}, {name:"CHACHAPOYAS", url:"assets/img/selva-chachapoyas.jpg", lugar:"Kuelap"},
-          {name:"IQUITOS", url:"assets/img/selva-iquitos.jpg", lugar:"Quistococha"}, {name:"TARAPOTO", url:"assets/img/selva-tarapoto.jpg", lugar:"Camiri"},
-          {name:"AYACUCHO", url:"assets/img/sierra-ayacucho.jpg", lugar:"Carnavales"}, {name:"CUSCO", url:"assets/img/sierra-cusco.jpg", lugar:"Piedra de los 12 angulos"},
-          {name:"PASCO", url:"assets/img/sierra-pasco.jpg", lugar:"Oxapampa"}, {name:"JUNIN", url:"assets/img/sierra-junin.jpg", lugar:"Huagapo"}];
+var arr =[{name:"AREQUIPA", url:"assets/img/costa-arequipa.jpg", lugar:"Colca", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"ICA", url:"assets/img/costa-ica.jpg", lugar:"Huacachina", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"LIMA", url:"assets/img/costa-lima.jpg", lugar:"Barranco", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"PIURA", url:"assets/img/costa-piura.jpg", lugar:"Mancora", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"TRUJILLO", url:"assets/img/costa-trujillo.jpg", lugar:"Huanchaco", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"CHACHAPOYAS", url:"assets/img/selva-chachapoyas.jpg", lugar:"Kuelap", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"IQUITOS", url:"assets/img/selva-iquitos.jpg", lugar:"Quistococha", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"TARAPOTO", url:"assets/img/selva-tarapoto.jpg", lugar:"Camiri", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"AYACUCHO", url:"assets/img/sierra-ayacucho.jpg", lugar:"Carnavales", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"CUSCO", url:"assets/img/sierra-cusco.jpg", lugar:"Piedra de los 12 angulos", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"PASCO", url:"assets/img/sierra-pasco.jpg", lugar:"Oxapampa", video:"https://www.youtube.com/embed/N2FErj7Fj3M"},
+          {name:"JUNIN", url:"assets/img/sierra-junin.jpg", lugar:"Huagapo", video:"https://www.youtube.com/embed/N2FErj7Fj3M"}];
 
 
 arr.forEach(e => imprimir(e));
@@ -35,8 +41,31 @@ function imprimir(elem){
   figure.appendChild(figcaption);
   figure.appendChild(img);
 
+  img.addEventListener('click',function(e){
+    mostrarModal(elem.video);
+    // document.getElementById('nextSpan').setAttribute('next-src',e.target.parentNode.nextSibling.firstChild.getAttribute('src'));
+  });
+
   return figure;
 }
+document.getElementsByClassName('close')[0].addEventListener('click',agregarClass);
+
+function agregarClass(){
+  this.parentNode.parentNode.classList.toggle('OpenClose');
+  // document.getElementById("inicio").style.overflow = 'block';
+    document.getElementById("inicio").style.overflow = 'visible';
+
+}
+function mostrarModal(src){
+  document.getElementById('modal-video').setAttribute('src',src);
+  // document.getElementById('modal').style.display = 'block';
+  document.getElementById('modal').classList.toggle('OpenClose');
+  document.getElementById("inicio").style.overflow = 'hidden';
+  // var spanNext = document.createElement('span');
+  // spanNext.setAttribute('next-src',"assets/img/img-"+id+".jpg");
+  // figure.appendChild(spanNext);
+}
+
 
 window.addEventListener('load', function(e){
   e.preventDefault();
