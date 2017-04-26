@@ -41,9 +41,17 @@ function imprimir(elem){
   figure.appendChild(figcaption);
   figure.appendChild(img);
 
+  var div = document.createElement('div');
+  var spanHeart = document.createElement('span');
+  var spanComment = document.createElement('span');
+  spanHeart.setAttribute('class','spanHeart fa fa-heart');
+  spanComment.setAttribute('class','spanComment fa fa-comment');
+  div.appendChild(spanHeart);
+  // div.appendChild(spanComment);
+  figure.appendChild(div);
+
   img.addEventListener('click',function(e){
     mostrarModal(elem.video);
-    // document.getElementById('nextSpan').setAttribute('next-src',e.target.parentNode.nextSibling.firstChild.getAttribute('src'));
   });
 
   return figure;
@@ -52,18 +60,13 @@ document.getElementsByClassName('close')[0].addEventListener('click',agregarClas
 
 function agregarClass(){
   this.parentNode.parentNode.classList.toggle('OpenClose');
-  // document.getElementById("inicio").style.overflow = 'block';
     document.getElementById("inicio").style.overflow = 'visible';
 
 }
 function mostrarModal(src){
   document.getElementById('modal-video').setAttribute('src',src);
-  // document.getElementById('modal').style.display = 'block';
   document.getElementById('modal').classList.toggle('OpenClose');
   document.getElementById("inicio").style.overflow = 'hidden';
-  // var spanNext = document.createElement('span');
-  // spanNext.setAttribute('next-src',"assets/img/img-"+id+".jpg");
-  // figure.appendChild(spanNext);
 }
 
 

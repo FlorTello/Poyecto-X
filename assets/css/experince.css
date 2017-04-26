@@ -49,3 +49,13 @@ iframe{
 .OpenClose{
   display: block;
 }
+span.spanHeart,
+span.spanComment{
+  color: #02b875;
+  display: inline-block;
+  position: absolute;
+  bottom: 50px;
+  margin: 10px;
+  letter-spacing: normal;
+  /*padding: 10px;*/
+}
