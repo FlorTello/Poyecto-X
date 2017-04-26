@@ -1,0 +1,50 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(http://t.wallpaperweb.org/wallpaper/nature/1920x1080/peacelakewallpaper6041_1920x1080.jpg);
+}
+.container-form{
+  background-color: rgba(52, 52, 52, 0.2);
+  width: 50%;
+  margin: auto 23% ;
+  margin-top: 80px;
+  padding: 14px;
+  position: relative;
+
+}
+.container-form .title-contact{
+  text-align: center;
+}
+.container-form .text-input, .text-mensaje{
+  /*margin: 7px;*/
+  padding: 7px;
+  border: none;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+  /*background-color: #f7f7f7;*/
+  border-radius: 5px;
+  position: relative;
+  margin-left: 35px;
+
+}
+.container-form label{
+  text-align:justify !important;
+  display: inline-block;
+  width: 80px;
+  padding: 0;
+  margin-left: 35px;
+  color: #00796B;
+  white-space: normal;
+  font-weight: bold;
+}
+
+.container-form .btn-datos{
+  text-align: center;
+  width: 100px;
+  margin-left: 40%;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #FBC02D;
+  border: 2px transparent ;
+  border-radius: 4px;
+}
