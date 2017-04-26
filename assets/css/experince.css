@@ -6,7 +6,7 @@ iframe{
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1500;
     padding-top: 20px;
     left: 0;
     top: 0;
@@ -55,12 +55,19 @@ iframe{
   top: 90%;
   display: inline-block;
   left: 10px;
+  top: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  color: #FFFFFF;
+}
+.spanHeart:hover{
+  font-size: 2rem;
+  color: #F8BBD0;
 }
 .cambiarLike{
-  color: red;
+  color: #e81d62;
+  font-size: 2rem;
 }
 .spanComment{
   font-size: 1.5rem;

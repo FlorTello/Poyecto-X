@@ -1,3 +1,4 @@
+var arrayRegion = document.getElementsByClassName('option-lugar');
 
 document.getElementById("toggle").addEventListener("mouseover", mostrar);
   document.getElementById("lugares").addEventListener('mouseout',ocultar);
@@ -49,10 +50,10 @@ function imprimir(elem){
     document.getElementById('modal-video').setAttribute('src',elem.video);
     document.getElementById('modal').classList.toggle('OpenClose');
     document.getElementById("inicio").style.overflow = 'hidden';
+    document.getElementsByClassName('close')[0].addEventListener('click',agregarClass);
   }
   return figure;
 }
-document.getElementsByClassName('close')[0].addEventListener('click',agregarClass);
 
 function agregarClass(){
   this.parentNode.parentNode.classList.toggle('OpenClose');
@@ -63,8 +64,39 @@ function agregarClass(){
 window.addEventListener('load', function(e){
   e.preventDefault();
   var dfm = document.createDocumentFragment();
-  arr.forEach(function(e){
-    dfm.appendChild(imprimir(e));
-  })
+  arr.forEach(e => dfm.appendChild(imprimir(e)));
   document.getElementsByClassName('grid')[0].appendChild(dfm);
+
 });
+
+arrayRegion[0].addEventListener('mouseup',mostarPorRegionesCosta);
+arrayRegion[1].addEventListener('mouseup',mostarPorRegionesSierra);
+arrayRegion[2].addEventListener('mouseup',mostarPorRegionesSelva);
+
+function mostarPorRegionesCosta(){
+  var dfm = document.createDocumentFragment();
+  arr.filter(e =>e.region == 'costa').forEach(e => dfm.appendChild(imprimir(e)));
+  var nodo = document.getElementsByClassName('grid')[1];
+  while (nodo.hasChildNodes()) {
+    nodo.removeChild(nodo.lastChild);
+  }
+  nodo.appendChild(dfm);
+}
+function mostarPorRegionesSelva(){
+  var dfm = document.createDocumentFragment();
+  arr.filter(e =>e.region == 'selva').forEach(e => dfm.appendChild(imprimir(e)));
+  var nodo = document.getElementsByClassName('grid')[2];
+  while (nodo.hasChildNodes()) {
+    nodo.removeChild(nodo.lastChild);
+  }
+  nodo.appendChild(dfm);
+}
+function mostarPorRegionesSierra(){
+  var dfm = document.createDocumentFragment();
+  arr.filter(e =>e.region == 'sierra').forEach(e => dfm.appendChild(imprimir(e)));
+  var nodo = document.getElementsByClassName('grid')[3];
+  while (nodo.hasChildNodes()) {
+    nodo.removeChild(nodo.lastChild);
+  }
+  nodo.appendChild(dfm);
+}
