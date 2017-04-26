@@ -1,13 +1,15 @@
 
 var email = document.getElementById("inputEmail");
 var password = document.getElementById("inputPassword");
+function valiarDatos(){
 
+}
 password.addEventListener('keydown',login);
 function login(e){
 
   if(e.keyCode == 13 && this.value !== ""){
     var expRegEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  	var expRegPass  = /^[a-zA-z-1||2||3||4||5||6||7||8||9]{6,}$/;
+  	var expRegPass  = /^[a-zA-z]{6,}$/;
 
   	var emailError = document.getElementById("errorEmail");
   	var passError	= document.getElementById("errorPass");
@@ -31,13 +33,13 @@ function findUserStorage(user, password) { //ingresa mi correo y pass del login
   var cont= 0;
   console.log(user + password);
   usuario_LS.filter(function (e){
-    if (user == e.user && password == e.password) {
+    if (user == e.user) {
   		cont++;
       console.log('Ingreso');
   	}
   });
     if(cont == 1) {
-        localStorage.setItem("login", "true");
+      localStorage.setItem("login", password);
       window.location="index.html";
     } else {
       alert("Usted no se encuentra registrado");

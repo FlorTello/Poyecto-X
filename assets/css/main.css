@@ -31,6 +31,15 @@ nav  li , nav a{
   color: #589442;
   font-size: 1.2rem;
   font-weight: bold;
+  top: 20px;
+}
+#user{
+  font-size: 1rem;
+  font-weight: normal;
+  color: #009688;
+  bottom: 5px;
+  position: relative;
+  padding-left: 10px;
 }
 .option:hover , .option-lugar:hover{
   color: #59FF0A;
