@@ -90,3 +90,38 @@ footer{
   bottom: 0;
   position: static;
 }
+
+#machu-picchu {
+  width: 880px;
+  height: 500px;
+}
+
+body {
+  margin: 0px;
+}
+
+.imagen-cuerpo {
+ position: relative;
+ top: 200px;
+ left: 110px;
+ margin: 5px;
+  width: 1109px;
+  height: 575px;
+}
+
+#estilo-cuadro {
+  text-align: center;
+  background-color: #F3F3F0;
+}
+
+#frase-cuadro {
+  position: relative;
+  margin: 0px;
+  padding: 50px;
+  top: 200px;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  letter-spacing: 0.5em;
+  color: #A29584;
+
+}
